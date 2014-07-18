@@ -35,7 +35,7 @@ header {
 #form > input {
 	margin: 10px;
 	width: 300px;
-	height: 20px;
+	height: 25px;
 	border: 1px dashed #FF6165;
 	color: #FF6165;
 
@@ -58,11 +58,20 @@ header {
 	width: 200px;
 	height: 20px;
 	border: 1px dashed #FF6165;
-	padding: 3px;
+	padding: 4px;
 	background-color: #FFFFFF;
 }
 
 .purchased {
 	text-decoration:line-through;
 	color: #6B6B6B;
+}
+
+.remove {
+	margin-top: 0px;
+	float: right;
+	border: none;
+	background-color: #FFFFFF;
+	color: #FF6165;
+	font-weight: bold;
 }
