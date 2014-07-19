@@ -1,27 +1,27 @@
 $(document).ready(function () {
 	$('.add').click(function() {
-		if($('input').val()) {
+		if($('input').val().trim()) {
 			$('.list').append('<p class="item">' + $('input').val() + '<button class="remove">X</button>' + '</p>');
 			$('input').val('');
 		}
 
-		else{
+		else {
 			alert('Type in an item before you press Add.')
-		}
+		}			
 	});
 
-	$(document).on('click', '.item', function() {
+	$('.list').on('click', '.item', function() {
 		$(this).toggleClass('purchased');
 	});
 
-	$(document).on('click', '.remove', function () {
+	$('.list').on('click', '.remove', function () {
 		$(this).closest('p').fadeOut('fast');
-		$(this).hideClass('.purchased');
+		return false;
 	});
 
-	$(document).keydown(function (event) {
+	$('#form').keydown(function (event) {
 		if(event.which == 13) {
-		if($('input').val()) {
+		if($('input').val().trim()) {
 			$('.list').append('<p class="item">' + $('input').val() + '<button class="remove">X</button>' + '</p>');
 			$('input').val('');
 		}

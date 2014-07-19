@@ -52,14 +52,15 @@ header {
 	text-align: center;
 }
 
-.item, .purchased {
+.item {
 	margin: auto;
 	margin-bottom: 10px;
 	width: 200px;
-	height: 20px;
+	min-height: 20px;
 	border: 1px dashed #FF6165;
 	padding: 4px;
 	background-color: #FFFFFF;
+	word-wrap: break-word;
 }
 
 .purchased {
