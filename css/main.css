@@ -41,7 +41,7 @@ header {
 
 }
 
-#form > button {
+.add {
 	border: 1px dashed #FF6165;
 	background-color: #FFFFFF;
 	color: #FF6165;
